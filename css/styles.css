@@ -2,11 +2,13 @@ body {
     background-color: #B8CBD6;
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
-    margin: 30px;
+    margin: 3%;
 }
 
 h1 {
-    color: #243447;
+    color: #020202;
+    font-size: 25px;
+
 }
 
 header {
@@ -27,36 +29,102 @@ footer {
 }
 
 main {
-    background-color: #E1E8EB;
+    background-color: #FFFFFF;
+    border-radius: 25px;
+    padding: 3%;
+    box-shadow: 0 8px 25px rgba(100, 80, 150, 0.12);
+    margin: 30px auto;
+    max-width: 1200px;
+    background-image: url("../img/fondo-pagina.png");
+    background-size: 100% 100%;
+    background-position: center;
+    
 }
+
 
 section {
     padding: 40px;
 }
 
 h2 {
+    font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #243447;
 }
 
 p {
     color: #334E68;
-    font-weight: 600;
+    font-weight: 500;
 }
 
 button {
-    background-color:azure;
+    background-color:rgb(255, 177, 216);
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    border-radius: 10px;
-    padding: 4px;
+    border-radius: 15px;
+    padding: 8px;
 }
 
 #cantidadDeColores {
     margin: 10px;
-    padding: 5px;
+    padding: 10px;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-size: 14px;
+    border: 2px solid #e5a5e1;
+
 }
 
 label {
     color: #334E68;
     font-weight: 600;
 }
+
+img {
+    width: 100% ;
+    max-width: 100%;
+    height: auto;
+}
+
+.tarjeta-color {
+    width: 150px;
+    height: 90px;
+    border-radius: 30px;
+    display: flex;
+    justify-content: center;
+    align-items: flex-end;
+    border: 2px solid #D5D5D5;
+    
+}
+
+.tarjeta-color p {
+    color: white;
+    background-color: #010202 ;
+    padding: 2px 7px;
+    border-radius: 2px;
+    display: inline-block;
+    margin-bottom: 7px;
+
+   
+    
+}
+  
+.tarjeta-color:hover {
+    transform: translateY(-8px)
+
+}
+
+#contenedorColores {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    gap: 15px;
+    margin-top: 30px;
+    flex-wrap: wrap;
+    
+
+} 
+
+button:focus-visible,
+select:focus-visible {
+    outline: 3px solid #7B3FC4;
+    outline-offset: 4px;
+}
+
