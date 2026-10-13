@@ -19,9 +19,6 @@ header {
     text-align: center;
 }
 
-.segundoPárrafo {
-    max-width: 100%;
-}
 
 footer {
     text-align: right;
@@ -58,7 +55,8 @@ p {
 
 button {
     background-color:rgb(255, 177, 216);
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+    font-weight: bold;
     border-radius: 15px;
     padding: 8px;
 }
@@ -91,6 +89,9 @@ img {
     justify-content: center;
     align-items: flex-end;
     border: 2px solid #D5D5D5;
+    color: white;
+    font-weight: bold;
+    text-shadow: 0 1px 3px black;
     
 }
 
@@ -102,8 +103,7 @@ img {
     display: inline-block;
     margin-bottom: 7px;
 
-   
-    
+
 }
   
 .tarjeta-color:hover {

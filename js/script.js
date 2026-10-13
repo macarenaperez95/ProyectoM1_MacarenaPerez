@@ -45,7 +45,7 @@ function generarPaleta() {
 
 // Creación de elementos en el HTML con el DOM
 
-        let tarjetaColor = document.createElement("div");
+        let tarjetaColor = document.createElement("button");
         tarjetaColor.classList.add("tarjeta-color");
         tarjetaColor.style.backgroundColor = colorHex;
 
