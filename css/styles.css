@@ -3,6 +3,7 @@ body {
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     font-size: larger;
     margin: 3%;
+
 }
 
 h1 {
@@ -13,16 +14,18 @@ h1 {
 
 header {
     text-align: center;
+
 }
 
  #paletas {
     text-align: center;
-}
 
+}
 
 footer {
     text-align: right;
     padding: 30px;
+
 }
 
 main {
@@ -32,27 +35,26 @@ main {
     box-shadow: 0 8px 25px rgba(100, 80, 150, 0.12);
     margin: 30px auto;
     max-width: 1200px;
-    background-image: url("../img/fondo-pagina.png");
+    background-image: url("../img/Fondo.png");
     background-size: 100% 100%;
-    background-position: center;
-    background-position: no-repeat;
 
-    
 }
-
 
 section {
     padding: 40px;
+
 }
 
 h2 {
     font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
     color: #243447;
+
 }
 
 p {
     color: #334E68;
     font-weight: 500;
+
 }
 
 button {
@@ -61,6 +63,7 @@ button {
     font-weight: bold;
     border-radius: 15px;
     padding: 8px;
+
 }
 
 #cantidadDeColores {
@@ -75,37 +78,25 @@ button {
 label {
     color: #334E68;
     font-weight: 600;
+
 }
 
 img {
     width: 100% ;
     max-width: 100%;
     height: auto;
-}
 
+}
+ 
 .tarjeta-color {
     width: 150px;
-    height: 90px;
-    border-radius: 30px;
     display: flex;
+    flex-direction: column;
+    align-items: center;
     justify-content: center;
-    align-items: flex-end;
-    border: 2px solid #D5D5D5;
-    color: white;
-    font-weight: bold;
-    text-shadow: 0 1px 3px black;
+    gap: 8px;
+   
     
-}
-
-.tarjeta-color p {
-    color: white;
-    background-color: #010202 ;
-    padding: 2px 7px;
-    border-radius: 2px;
-    display: inline-block;
-    margin-bottom: 7px;
-
-
 }
   
 .tarjeta-color:hover {
@@ -121,11 +112,20 @@ img {
     margin-top: 30px;
     flex-wrap: wrap;
     
-
 } 
 
 button:focus-visible,
 select:focus-visible {
     outline: 3px solid #7B3FC4;
     outline-offset: 4px;
+
+}
+
+.muestra-color {
+    width: 150px;
+    height: 90px;
+    border-radius: 30px;
+    border: 2px solid #D5D5D5;
+
+    
 }
