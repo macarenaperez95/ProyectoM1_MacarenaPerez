@@ -16,53 +16,80 @@ function generarPaleta() {
     console.log("mostrarPaleta");
     console.log(opcionColores.value);
 
-// creación del array y limpieza del contenedor
+    // creación del array y limpieza del contenedor
 
     let colores =[];
-        contenedorColores.innerHTML = "";  
+    contenedorColores.innerHTML = "";  
 
-// Bucle for: Generar colores aleatorios
+    // Bucle for: Generar colores aleatorios
         
     for (let i = 0; i < opcionColores.value; i++) {
         let tono = Math.floor(Math.random() * 360);
         let saturacion = Math.floor(Math.random() * 101);
         let luminosidad = Math.floor(Math.random() * 101);
 
-// Convertir el color a HEX
+
+        let colorHsl = `hsl(${tono}, ${saturacion}%, ${luminosidad}%)`;
+
+
+        // Convertir el color a HEX
 
         let colorHex = convertirAHex(tono, saturacion, luminosidad);
 
-// Guardar el colore en el array
+        // Guardar los códigos HEX y HSL en el array
 
-        colores.push(colorHex);
+        colores.push({
+            hex: colorHex,
+            hsl: colorHsl
+
+        });
 
     }
 
-// Bucle for: Recorrer el array    
+    // Bucle for: Recorrer los colores guardados en el array    
 
     for (let i = 0; i < colores.length; i++) {
-        let colorHex = colores[i];
+        let colorHex = colores[i].hex; 
+        let colorHsl = colores[i].hsl;
 
-// Creación de elementos en el HTML con el DOM
+        // Crea las tarjetas de colores utilizando el DOM
 
-        let tarjetaColor = document.createElement("button");
+        let tarjetaColor = document.createElement("div");
         tarjetaColor.classList.add("tarjeta-color");
-        tarjetaColor.style.backgroundColor = colorHex;
 
-// Mostrar código HEX
+        let muestraColor = document.createElement("div");
+        muestraColor.classList.add("muestra-color");
+        muestraColor.style.backgroundColor = colorHex;
 
-        let textoHex = document.createElement("p");
+        tarjetaColor.appendChild(muestraColor);
+        
+
+        // Mostrar código HEX y HSL
+
+        let textoHex = document.createElement("button");
         textoHex.textContent = colorHex;
         tarjetaColor.appendChild(textoHex);
+        textoHex.classList.add("boton-codigo");
 
-// Evento click: copiar color
 
-        tarjetaColor.addEventListener("click", () => {
-          navigator.clipboard.writeText(colorHex);
-          tarjetaColor.textContent = "¡Copiado!";
+        let textoHsl = document.createElement("button");
+        textoHsl.textContent = colorHsl;
+        tarjetaColor.appendChild(textoHsl);
+        textoHsl.classList.add("boton-codigo");
+
+        // Evento click: copiar los códigos HEX Y HSL por separado
+
+        textoHex.addEventListener("click", () => {
+            navigator.clipboard.writeText(colorHex);
+            textoHex.textContent = "Copiado";
 });
 
-// Agregar la tarjeta al contenedor
+        textoHsl.addEventListener("click", () => {
+            navigator.clipboard.writeText(colorHsl);
+            textoHsl.textContent = "Copiado";
+});
+
+        // Agregar la tarjeta al contenedor
 
          contenedorColores.appendChild(tarjetaColor);
     }
