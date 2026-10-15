@@ -59,7 +59,7 @@ Para desarrollar ColorPops se utilizó HTML, CSS y JavaScript, siguiendo los req
 
 ## GIF del proyecto
 
-### Paleta de 6 colores
+### Paleta de colores
 
 ![Demostración de ColorPops](./GIF/ColorPops.gif)
 
