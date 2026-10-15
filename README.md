@@ -57,16 +57,19 @@ Para desarrollar ColorPops se utilizó HTML, CSS y JavaScript, siguiendo los req
 7. Esperar unos minutos hasta que GitHub Pages publique la página.
 8. Una vez publicado, acceder al enlace generado para visualizarlo. 
 
-## Capturas del proyecto
+## GIF del proyecto
 
 ### Paleta de 6 colores
-![paleta de 6 colores](capturas/paleta-6-colores.png)
 
-### Paleta de 8 colores
-![paleta de 8 colores](capturas/paleta-8-colores.png)
+![Demostración de ColorPops](./GIF/ColorPops.gif)
 
-### Paleta de 9 colores
-![paleta de 9 colores](capturas/paleta-9-colores.png)
+## Uso de Inteligencia Artificial
+
+Durante la cursada y el desarrollo de ColorPops utilicé ChatGPT como herramienta de apoyo para repasar conceptos, resolver dudas y revisar mi código.
+
+Documenté los prompts utilizados, las respuestas obtenidas y las capturas de las conversaciones.
+
+[Ver documentación del uso de IA](./USO_IA.md)
 
 ## Autoría
 
